@@ -35,9 +35,7 @@
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300"
                     href="../cloudModule.php">Cloud Computing</a>
                 <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300"
-                    href="#">About</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300"
-                    href="#">Contact</a>
+                    href="contact.php">Contact</a>
             </nav>
         </div>
     </div>
