@@ -15,7 +15,7 @@ $password = "";
 $dbname = "adsoPage";
 
 // Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conexion = mysqli_connect('localhost', 'u469734594_adsoPageRoot', 'AdsoPage_2024', 'u469734594_adsoPage');
 
 // Verificar conexión
 if ($conn->connect_error) {
