@@ -10,12 +10,12 @@
 <?php
 // Configuración de la base de datos
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "adsoPage";
+$username = "u469734594_adsoPageRoot";
+$password = "AdsoPage_2024";
+$dbname = "u469734594_adsoPage";
 
 // Crear conexión
-$conexion = mysqli_connect('localhost', 'u469734594_adsoPageRoot', 'AdsoPage_2024', 'u469734594_adsoPage');
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar conexión
 if ($conn->connect_error) {
