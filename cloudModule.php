@@ -40,8 +40,8 @@
 
     <!-- Buttons Section -->
     <div class="mt-16">
-      <h3 class="text-center text-2xl font-semibold text-gray-800 mb-8">Explore the Module</h3>
-      <div class="flex justify-center space-x-8">
+    <h3 class="text-center text-2xl font-semibold text-gray-800 mb-8">Explore the Module</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
         <!-- Vocabulary Button -->
         <a 
           href="cloudModule/vocabulario.php" 
@@ -77,8 +77,9 @@
           />
           <span class="text-lg font-semibold text-green-500">Games</span>
         </a>
-      </div>
     </div>
+</div>
+
   </div>
 </div>
 
