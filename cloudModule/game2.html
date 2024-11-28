@@ -4,96 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete the Tech Term</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .question {
-            font-size: 18px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .options {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .option, .exit {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 5px;
-            transition: background-color 0.3s ease;
-            font-size: 14px;
-        }
-
-        .exit {
-            background-color: red;
-        }
-
-        .option img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-        }
-
-        .option:hover {
-            background-color: #0056b3;
-        }
-
-        .result {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 18px;
-        }
-
-        @media (max-width: 600px) {
-            .option {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-<div class="container">
-    <h1>Complete the Tech Term</h1>
-    <div class="question" id="question">Click a word to complete the phrase!</div>
-    <div class="options" id="options-container"></div>
-    <div class="result" id="result-container"></div>
-    <button onclick="exitGame()" class="exit">Exit Game</button>
-</div>
+    <div class="container bg-white p-4 rounded-lg shadow-md max-w-md w-full">
+        <h1 class="text-lg font-bold text-center mb-4">Complete the Tech Term</h1>
+        <div id="question" class="text-sm text-center mb-4">
+            Click a word to complete the phrase!
+        </div>
+        <div id="options-container" class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <!-- Options will be dynamically added here -->
+        </div>
+        <div id="result-container" class="text-center text-sm mt-3"></div>
+        <button 
+            onclick="exitGame()" 
+            class="bg-red-500 text-white py-2 px-4 rounded-lg mt-4 w-full hover:bg-red-600 transition duration-300">
+            Exit Game
+        </button>
+    </div>
 
-<script>
-const dictionary = [
+    <script>
+        const dictionary = [
     { 
         term: 'Cloud Computing', 
         en: 'Provision of computing services (servers, storage, databases, networking, software, etc.) over the internet, allowing access to resources on demand.', 
@@ -132,7 +64,7 @@ const dictionary = [
     { 
         term: 'Kubernetes', 
         en: 'Container orchestration system that automates the deployment, scaling, and management of containerized applications in the cloud.', 
-        icon: 'https://static-00.iconduck.com/assets.00/kubernetes-icon-2048x1995-r1q3f8n7.png'
+        icon: 'https://tecbrix.com/wp-content/uploads/2022/05/kubernetes.png'
     },
     { 
         term: 'Docker', 
@@ -156,80 +88,92 @@ const dictionary = [
     }
 ];
 
+        let currentQuestionIndex = 0;
+        let correctAnswers = 0;
 
-    let currentQuestionIndex = 0;
-    let correctAnswers = 0;
+        const questionElement = document.getElementById('question');
+        const optionsContainer = document.getElementById('options-container');
+        const resultContainer = document.getElementById('result-container');
 
-    const questionElement = document.getElementById('question');
-    const optionsContainer = document.getElementById('options-container');
-    const resultContainer = document.getElementById('result-container');
-
-    // Función para mezclar un array (algoritmo Fisher-Yates)
-    function shuffle(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-    }
-
-    // Mezclar preguntas al iniciar el juego
-    shuffle(dictionary);
-
-    function displayQuestion() {
-        const currentQuestion = dictionary[currentQuestionIndex];
-        questionElement.textContent = currentQuestion.en;
-        displayOptions();
-    }
-
-    function displayOptions() {
-        optionsContainer.innerHTML = '';
-
-        // Mezclar opciones antes de mostrarlas
-        const shuffledOptions = [...dictionary];
-        shuffle(shuffledOptions);
-
-        shuffledOptions.forEach(item => {
-            const button = document.createElement('button');
-            button.classList.add('option');
-            button.innerHTML = `<img src="${item.icon}" alt="${item.term}"> ${item.term}`;
-            button.addEventListener('click', () => checkAnswer(item.term));
-            optionsContainer.appendChild(button);
-        });
-    }
-
-    function checkAnswer(selectedTerm) {
-        const correctTerm = dictionary[currentQuestionIndex].term;
-        if (selectedTerm === correctTerm) {
-            correctAnswers++;
-            resultContainer.textContent = 'Correct!';
-        } else {
-            resultContainer.textContent = `Incorrect! The correct term was ${correctTerm}.`;
+        // Shuffle function
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
         }
 
-        currentQuestionIndex++;
-        if (currentQuestionIndex < dictionary.length) {
-            setTimeout(() => {
-                resultContainer.textContent = '';
-                displayQuestion();
-            }, 1000);
-        } else {
-            setTimeout(() => {
-                questionElement.textContent = 'Game Over!';
-                optionsContainer.innerHTML = '';
-                resultContainer.innerHTML = `You answered ${correctAnswers} out of ${dictionary.length} correctly.`;
-            }, 1000);
+        shuffle(dictionary);
+
+        function displayQuestion() {
+            const currentQuestion = dictionary[currentQuestionIndex];
+            questionElement.textContent = currentQuestion.en;
+            displayOptions();
         }
+
+        function checkAnswer(selectedTerm) {
+    const correctTerm = dictionary[currentQuestionIndex].term;
+    if (selectedTerm === correctTerm) {
+        correctAnswers++;
+        resultContainer.textContent = 'Correct!';
+        // Eliminar la opción correcta del diccionario
+        dictionary.splice(currentQuestionIndex, 1);
+    } else {
+        resultContainer.textContent = `Incorrect! The correct term was ${correctTerm}.`;
     }
 
-    function exitGame() {
-        if (confirm("Are you sure you want to exit the game?")) {
-            window.location.href = "../cloudModule.php"; // Ajusta la URL de salida según sea necesario
-        }
+    // Avanzar a la siguiente pregunta
+    if (dictionary.length > 0) {
+        currentQuestionIndex = Math.floor(Math.random() * dictionary.length);
+        setTimeout(() => {
+            resultContainer.textContent = '';
+            displayQuestion();
+        }, 1000);
+    } else {
+        // Juego terminado
+        setTimeout(() => {
+            questionElement.textContent = 'Game Over!';
+            optionsContainer.innerHTML = '';
+            resultContainer.innerHTML = `You answered ${correctAnswers} correctly.`;
+        }, 1000);
     }
+}
 
-    // Mostrar la primera pregunta
-    displayQuestion();
-</script>
+function displayOptions() {
+    optionsContainer.innerHTML = '';
+    const shuffledOptions = [...dictionary];
+    shuffle(shuffledOptions);
+
+    shuffledOptions.forEach((item, index) => {
+        const button = document.createElement('button');
+        button.classList.add(
+            'option',
+            'flex',
+            'items-center',
+            'bg-blue-500',
+            'text-white',
+            'rounded-lg',
+            'p-2',
+            'hover:bg-blue-600',
+            'transition',
+            'duration-300',
+            'text-sm'
+        );
+        button.innerHTML = `<img src="${item.icon}" alt="${item.term}" class="w-6 h-6 mr-2"> ${item.term}`;
+        button.addEventListener('click', () => checkAnswer(item.term));
+        optionsContainer.appendChild(button);
+    });
+}
+
+
+        function exitGame() {
+            if (confirm("Are you sure you want to exit the game?")) {
+                window.location.href = "../cloudModule.php";
+            }
+        }
+
+        displayQuestion();
+    </script>
 
 </body>
 </html>

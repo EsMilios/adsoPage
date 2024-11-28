@@ -6,12 +6,12 @@
   <title>Select a Module</title>
 </head>
 
-<div class="h-screen flex flex-col justify-center items-center bg-gray-100">
-  <h1 class="text-4xl font-bold text-gray-900 mb-8">Choose Your Module</h1>
-  <div class="flex flex-wrap justify-center gap-8">
+<div class="min-h-screen flex flex-col justify-center items-center bg-gray-100 p-4">
+  <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">Choose Your Module</h1>
+  <div class="flex flex-wrap justify-center gap-8 w-full max-w-6xl">
     <!-- Web Development Module -->
-    <div class="w-80 h-100 bg-blue-500 rounded-lg shadow-lg flex flex-col items-center p-6 hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <h2 class="text-2xl font-bold text-white mb-4">Web Development</h2>
+    <div class="w-full md:w-96 bg-blue-500 rounded-lg shadow-lg flex flex-col items-center p-8 md:p-10 hover:shadow-xl hover:scale-105 transition transform duration-300">
+      <h2 class="text-2xl font-bold text-white mb-4 text-center">Web Development</h2>
       <p class="text-white text-center mb-6">
         Explore vocabulary, conversations, and interactive games focused on web development concepts.
       </p>
@@ -24,8 +24,8 @@
     </div>
 
     <!-- Cloud Computing Module -->
-    <div class="w-80 h-100 bg-green-500 rounded-lg shadow-lg flex flex-col items-center p-6 hover:shadow-xl hover:scale-105 transition transform duration-300">
-      <h2 class="text-2xl font-bold text-white mb-4">Cloud Computing</h2>
+    <div class="w-full md:w-96 bg-green-500 rounded-lg shadow-lg flex flex-col items-center p-8 md:p-10 hover:shadow-xl hover:scale-105 transition transform duration-300">
+      <h2 class="text-2xl font-bold text-white mb-4 text-center">Cloud Computing</h2>
       <p class="text-white text-center mb-6">
         Dive into cloud computing with tailored vocabulary, conversations, and fun games.
       </p>
