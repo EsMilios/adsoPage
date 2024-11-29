@@ -10,9 +10,9 @@
 <?php
 // Configuración de la base de datos
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "adsoPage";
+$username = "u469734594_adsoPageRoot";
+$password = "pgAdso2024";
+$dbname = "u469734594_adsoPage";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
