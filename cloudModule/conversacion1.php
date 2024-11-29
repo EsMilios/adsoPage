@@ -33,7 +33,7 @@
                     <div class="profile">
                         <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid" alt="Persona 1" class="w-20 h-20 rounded-full">
                     </div>
-                    <div class="message-content bg-blue-100 p-4 rounded-lg w-full max-w-[70%]">
+                    <div class="message-content bg-blue-100 p-4 rounded-lg ">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con1Diag1.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="chat-message flex items-start justify-end space-x-4">
-                    <div class="message-content bg-green-100 p-4 rounded-lg w-full max-w-[70%]">
+                    <div class="message-content bg-green-100 p-4 rounded-lg">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con1Diag2.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
@@ -59,7 +59,7 @@
                     <div class="profile">
                         <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid" alt="Persona 1" class="w-20 h-20 rounded-full">
                     </div>
-                    <div class="message-content bg-blue-100 p-4 rounded-lg w-full max-w-[70%]">
+                    <div class="message-content bg-blue-100 p-4 rounded-lg ">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con1Diag3.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="chat-message flex items-start justify-end space-x-4">
-                    <div class="message-content bg-green-100 p-4 rounded-lg w-full max-w-[70%]">
+                    <div class="message-content bg-green-100 p-4 rounded-lg  max-w-[70%]">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con1Diag4.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
@@ -85,7 +85,7 @@
                     <div class="profile">
                         <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid" alt="Persona 1" class="w-20 h-20 rounded-full">
                     </div>
-                    <div class="message-content bg-blue-100 p-4 rounded-lg w-full max-w-[70%]">
+                    <div class="message-content bg-blue-100 p-4 rounded-lg max-w-[70%]">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con1Diag5.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
