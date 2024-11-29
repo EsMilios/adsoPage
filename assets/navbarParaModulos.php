@@ -13,7 +13,7 @@
 <body class="h-screen overflow-auto bg-gray-100">
     <!-- Navbar -->
     <div class="w-full text-gray-700 bg-white">
-        <div x-data="{ open: false } "
+        <div x-data="{ open: false }"
             class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
             <div class="p-4 flex flex-row items-center justify-between">
                 <a href="../index.php" class="text-lg font-semibold tracking-widest text-gray-900 uppercase">ADSO</a>
@@ -28,20 +28,53 @@
                     </svg>
                 </button>
             </div>
-            <nav :class="{'flex': open, 'hidden': !open}"
-                class="flex-col flex-grow pb-4 hidden md:flex md:justify-end md:flex-row mt-4">
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300"
-                    href="../webModule.php">Web Development</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300"
-                    href="../cloudModule.php">Cloud Computing</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300"
-                    href="../profeciones.php">IT Professions</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300"
-                    href="../contact.php">Contact</a>
+            <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 hidden md:flex md:justify-end md:flex-row mt-4">
+                <!-- Dropdown for Web Module -->
+                <div x-data="{ dropdownOpen: false }" class="relative">
+                    <button @click="dropdownOpen = !dropdownOpen" 
+                        class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300">
+                        Web Module
+                    </button>
+                    <div x-show="dropdownOpen" 
+                        @click.away="dropdownOpen = false" 
+                        class="absolute z-10 mt-2 bg-white border rounded shadow-lg">
+                        <a href="../webModule.php" 
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Home</a>
+                        <a href="../webModule/vocabulario.php" 
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Vocabulary</a>
+                        <a href="../webModule/seleccionarConversaciones.php" 
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Conversations</a>
+                        <a href="../webModule/seleccionarJuego.php" 
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Games</a>
+                    </div>
+                </div>
+
+                <!-- Dropdown for Cloud Module -->
+                <div x-data="{ dropdownOpen: false }" class="relative">
+                    <button @click="dropdownOpen = !dropdownOpen" 
+                        class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300">
+                        Cloud Module
+                    </button>
+                    <div x-show="dropdownOpen" 
+                        @click.away="dropdownOpen = false" 
+                        class="absolute z-10 mt-2 bg-white border rounded shadow-lg">
+                        <a href="../cloudModule.php" 
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Home</a>
+                        <a href="../cloudModule/vocabulario.php" 
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Vocabulary</a>
+                        <a href="../cloudModule/seleccionarConversaciones.php" 
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Conversations</a>
+                        <a href="../cloudModule/seleccionarJuego.php" 
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Games</a>
+                    </div>
+                </div>
+
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300" href="../profeciones.php">IT Professions</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:bg-gray-300" href="../contact.php">Contact</a>
             </nav>
         </div>
     </div>
-
 </body>
+
 
 </html>

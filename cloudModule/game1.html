@@ -103,6 +103,15 @@
         .back-home:hover {
             background-color: #5a6268;
         }
+
+        .exit-game {
+            background-color: #dc3545;
+            margin-top: 30px;
+        }
+
+        .exit-game:hover {
+            background-color: #c82333;
+        }
     </style>
 </head>
 <body>
@@ -118,6 +127,8 @@
     <div class="result"></div>
     <button class="restart" onclick="restartGame()">Restart Game</button>
     <button class="back-home" onclick="goHome()">Back to Cloud Module</button>
+    <!-- Botón de salir del juego -->
+    <button class="exit-game" onclick="exitGame()">Exit Game</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -206,6 +217,10 @@
 
         function goHome() {
             window.location.href = "../cloudModule.php"; // Redirigir desde assets/games/juego1 a webModule.php
+        }
+
+        function exitGame() {
+            window.location.href = "seleccionarJuego.php"; 
         }
 
         $(document).ready(function() {

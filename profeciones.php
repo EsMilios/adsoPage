@@ -21,7 +21,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Profesión: Software Developer -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://www.open.edu.au/-/media/blog/2022/10-october/software-developer-vs-engineer_edited.jpg?rev=22dc593363e74d4285cb4042c8401af0&hash=E24D135115965E7D0987B18CA8DF6028" alt="Software Developer" class="w-full">
+            <img src="https://www.open.edu.au/-/media/blog/2022/10-october/software-developer-vs-engineer_edited.jpg?rev=22dc593363e74d4285cb4042c8401af0&hash=E24D135115965E7D0987B18CA8DF6028" alt="Software Developer" class="w-full h-96 object-cover">
             <div class="p-6">
                 <h2 class="text-3xl font-bold text-blue-600 mb-4">Software Developer</h2>
                 <p class="text-gray-700">
@@ -38,9 +38,9 @@
 
         <!-- Profesión: Data Analyst -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://www.theforage.com/blog/wp-content/uploads/2023/02/data-analyst-1024x683.jpg" alt="Data Analyst" class="w-full">
+            <img src="https://www.theforage.com/blog/wp-content/uploads/2023/02/data-analyst-1024x683.jpg" alt="Data Analyst" class="w-full h-96 object-cover">
             <div class="p-6">
-                <h2 class="text-3xl font-bold text-green-600 mb-4">Data Analyst</h2>
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">Data Analyst</h2>
                 <p class="text-gray-700">
                     <strong>Technical Requirements:</strong> Knowledge of SQL, Tableau, and statistical programming languages like R or Python.
                 </p>
@@ -55,9 +55,9 @@
 
         <!-- Profesión: IT Project Manager -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://www.matchtech.com/sites/matchtech/files/styles/1536x/public/2023-04/9%20qualities%20of%20a%20top%20IT%20project%20manager_1.jpg?itok=uxTNI_1O" alt="IT Project Manager" class="w-full">
+            <img src="https://www.matchtech.com/sites/matchtech/files/styles/1536x/public/2023-04/9%20qualities%20of%20a%20top%20IT%20project%20manager_1.jpg?itok=uxTNI_1O" alt="IT Project Manager" class="w-full h-96 object-cover">
             <div class="p-6">
-                <h2 class="text-3xl font-bold text-red-600 mb-4">IT Project Manager</h2>
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">IT Project Manager</h2>
                 <p class="text-gray-700">
                     <strong>Technical Requirements:</strong> Familiarity with project management tools like Jira and Agile methodologies.
                 </p>
@@ -72,9 +72,9 @@
 
         <!-- Profesión: UX/UI Designer -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://www.iotworlds.com/wp-content/uploads/2023/01/iotworlds-UI-UX-designer.jpg" alt="UX/UI Designer" class="w-full">
+            <img src="https://www.iotworlds.com/wp-content/uploads/2023/01/iotworlds-UI-UX-designer.jpg" alt="UX/UI Designer" class="w-full h-96 object-cover">
             <div class="p-6">
-                <h2 class="text-3xl font-bold text-purple-600 mb-4">UX/UI Designer</h2>
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">UX/UI Designer</h2>
                 <p class="text-gray-700">
                     <strong>Technical Requirements:</strong> Proficiency in design tools like Figma or Adobe XD; knowledge of user research.
                 </p>
@@ -89,9 +89,9 @@
 
         <!-- Profesión: Cybersecurity Specialist -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://www.ituonline.com/wp-content/uploads/2023/12/A-professional-and-engaging-wide-banner-image-representing-the-career-of-a-Cyber-Security-Specialist.-The-design-includes-a-digital-landscape-backgrou.jpg" alt="Cybersecurity Specialist" class="w-full">
+            <img src="https://www.ituonline.com/wp-content/uploads/2023/12/A-professional-and-engaging-wide-banner-image-representing-the-career-of-a-Cyber-Security-Specialist.-The-design-includes-a-digital-landscape-backgrou.jpg" alt="Cybersecurity Specialist" class="w-full h-96 object-cover">
             <div class="p-6">
-                <h2 class="text-3xl font-bold text-indigo-600 mb-4">Cybersecurity Specialist</h2>
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">Cybersecurity Specialist</h2>
                 <p class="text-gray-700">
                     <strong>Technical Requirements:</strong> Knowledge of network security, firewalls, and threat detection systems.
                 </p>
@@ -106,9 +106,9 @@
 
         <!-- Profesión: DevOps Engineer -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://assets.techrepublic.com/uploads/2023/10/tr_20231018-devops-engineer-roles-and-responsibilities.png" alt="DevOps Engineer" class="w-full">
+            <img src="https://assets.techrepublic.com/uploads/2023/10/tr_20231018-devops-engineer-roles-and-responsibilities.png" alt="DevOps Engineer" class="w-full h-96 object-cover">
             <div class="p-6">
-                <h2 class="text-3xl font-bold text-yellow-600 mb-4">DevOps Engineer</h2>
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">DevOps Engineer</h2>
                 <p class="text-gray-700">
                     <strong>Technical Requirements:</strong> Proficiency in CI/CD pipelines, cloud platforms, and scripting.
                 </p>

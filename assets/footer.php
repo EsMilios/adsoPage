@@ -12,13 +12,15 @@
 
 <footer class="bg-gray-800 text-white py-4 px-3 mt-16">
     <div class="container mx-auto flex flex-wrap items-center justify-between">
-        <div class="w-full md:w-1/2 md:text-center md:mb-0 mb-8">
-            <p class="text-xs text-gray-400 md:text-sm">SENA 2024 &copy; All Rights Reserved</p>
-        </div>
-        <div class="w-full md:w-1/2 md:text-center md:mb-0 mb-8">
+        <div class="w-full md:w-1/2 md:text-center md:order-2 mb-8 md:mb-0 order-1">
             <ul class="list-reset flex justify-center flex-wrap text-xs md:text-sm gap-3">
-                <li><a href="contact.php" class="text-gray-400 hover:text-white">Contact</a></li>
+                <li><a href="contact.php" class="text-gray-400 hover:text-sky-600 hover:underline transition-colors duration-300">Contact</a></li>
             </ul>
+        </div>
+
+        <div class="w-full md:w-1/2 md:text-center md:order-1 mb-8 md:mb-0 order-2 flex justify-center items-center gap-2">
+            <img src="https://seeklogo.com/images/S/sena-colombia-logo-ACEBCC0AE1-seeklogo.com.png" alt="Logo SENA" class="w-4 h-4 md:w-6 md:h-6">
+            <p class="text-xs text-gray-400 md:text-sm">SENA 2024</p>
         </div>
     </div>
 </footer>

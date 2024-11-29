@@ -7,6 +7,17 @@
   <title>Conversation Cloud Module</title>
 </head>
 
+<div class="w-full text-gray-700 bg-gray-100">
+    <div x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+        <button onclick="window.history.back()" class="bg-blue-600 text-white px-4 py-2 rounded focus:outline-none hover:bg-green-700">
+            Back
+        </button>
+        </div>
+    </div>
+</div>
+
 <div class="flex flex-col items-center justify-center h-screen p-4">
         
         <!-- Título de la conversación -->
@@ -18,9 +29,9 @@
             <!-- Mensajes de la conversación -->
             <div class="chat-container space-y-4">
                 
-                <div class="chat-message flex items-start space-x-4 ">
-                        <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid" alt="Persona 1" class="w-20 h-20 rounded-full">
+                <div class="chat-message flex items-start space-x-4">
                     <div class="profile">
+                        <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid" alt="Persona 1" class="w-20 h-20 rounded-full">
                     </div>
                     <div class="message-content bg-blue-100 p-4 rounded-lg w-full max-w-[70%]">
                         <audio controls>

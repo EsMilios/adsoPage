@@ -10,9 +10,9 @@
 <?php
 // Configuración de la base de datos
 $servername = "localhost";
-$username = "u469734594_adsoPageRoot";
-$password = "AdsoPage_2024";
-$dbname = "u469734594_adsoPage";
+$username = "root";
+$password = "";
+$dbname = "adsoPage";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -26,6 +26,17 @@ if ($conn->connect_error) {
 $sql = "SELECT tittle, description, icon, audio FROM cloudVocabularyAudios";
 $result = $conn->query($sql);
 ?>
+
+<div class="w-full text-gray-700 bg-gray-100">
+    <div x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+            <a href="../cloudModule.php" class="bg-blue-600 text-white px-4 py-2 rounded focus:outline-none hover:bg-green-700">
+                Back to Cloud Module
+            </a>
+        </div>
+    </div>
+</div>
 
 <div class="container mx-auto px-4 py-8 space-y-8">
     <!-- Header -->
@@ -44,7 +55,7 @@ $result = $conn->query($sql);
     <div id="vocabularyList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 min-h-[500px]">
         <?php if ($result->num_rows > 0): ?>
             <?php while ($row = $result->fetch_assoc()): ?>
-                <div class="vocabulary-item bg-white shadow-lg rounded-lg p-4 flex flex-col items-center space-y-4">
+                <div class="vocabulary-item bg-white shadow-lg rounded-lg p-4 flex flex-col items-center space-y-4 ">
                     <img src="<?php echo $row['icon']; ?>" alt="Icon" class="w-16 h-16 rounded-full" onerror="this.onerror=null; this.src='path/to/default/image.png';">
                     <h3 class="text-xl font-semibold text-blue-500"><?php echo $row['tittle']; ?></h3>
                     <p class="text-gray-600 text-sm text-center"><?php echo $row['description']; ?></p>

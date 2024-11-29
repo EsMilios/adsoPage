@@ -56,7 +56,7 @@
 
         <!-- Conversations Button -->
         <a 
-          href="cloudModule/seleccionarConversacion.php" 
+          href="cloudModule/seleccionarConversaciones.php" 
           class="flex flex-col items-center justify-center w-40 h-48 text-center bg-white p-4 rounded-lg shadow-md hover:bg-gray-50 transform hover:scale-105 transition">
           <img 
             src="https://cdn-icons-png.flaticon.com/512/3448/3448491.png" 

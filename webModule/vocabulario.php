@@ -10,9 +10,9 @@
 <?php
 // Configuración de la base de datos
 $servername = "localhost";
-$username = "u469734594_adsoPageRoot";
-$password = "AdsoPage_2024";
-$dbname = "u469734594_adsoPage";
+$username = "root";
+$password = "";
+$dbname = "adsoPage";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -26,6 +26,17 @@ if ($conn->connect_error) {
 $sql = "SELECT tittle, description, icon, audio FROM webVocabularyAudios";
 $result = $conn->query($sql);
 ?>
+
+<div class="w-full text-gray-700 bg-gray-100">
+    <div x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+            <a href="../webModule.php" class="bg-blue-600 text-white px-4 py-2 rounded focus:outline-none hover:bg-green-700">
+                Back to Web Module
+            </a>
+        </div>
+    </div>
+</div>
 
 <div class="container mx-auto px-4 py-8 space-y-8">
     <!-- Header -->

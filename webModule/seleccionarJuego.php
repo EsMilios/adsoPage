@@ -6,12 +6,23 @@
   <title>Select Game Web Module</title>
 </head>
 
+<div class="w-full text-gray-700 bg-gray-100">
+    <div x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+            <a href="../webModule.php" class="bg-blue-600 text-white px-4 py-2 rounded focus:outline-none hover:bg-green-700">
+                Back to Web Module
+            </a>
+        </div>
+    </div>
+</div>
+
 
 <div class="flex items-center justify-center h-screen">
     <div class="text-center">
         <!-- Título principal -->
         <h1 class="text-4xl font-bold text-gray-800 mb-10">
-            Select a Game in Web Module
+            Select a Web Module Game 
         </h1>
 
         <!-- Contenedor de los botones de juegos -->
