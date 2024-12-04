@@ -12,7 +12,7 @@
       <!-- Text Content -->
       <div class="max-w-2xl">
         <h1 class="text-4xl font-bold text-gray-800 sm:text-5xl lg:text-6xl">
-          ¡Welcome to  <span class="text-blue-500">ADSO!</span>
+          Welcome to  <span class="text-blue-500">ADSO!</span>
         </h1>
         <p class="mt-4 text-lg text-gray-600">
             Welcome to this page dedicated to vocabulary of Software Analysis and Development (ADSO). 

@@ -1,7 +1,6 @@
 <?php
 // getAudio.php
-$conexion = mysqli_connect('localhost', 'root', '', 'adsoPage');
-
+$conexion = mysqli_connect('localhost', 'u469734594_adsoPageRoot', 'pgAdso2024', 'u469734594_adsoPage');
 // Verifica la conexión
 if (!$conexion) {
     die("Conexión fallida: " . mysqli_connect_error());

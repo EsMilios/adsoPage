@@ -106,7 +106,7 @@
 
         <!-- Profesión: DevOps Engineer -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://assets.techrepublic.com/uploads/2023/10/tr_20231018-devops-engineer-roles-and-responsibilities.png" alt="DevOps Engineer" class="w-full h-96 object-cover">
+            <img src="https://www.scnsoft.com/blog-pictures/itsm/how-can-a-system-administrator-turn-into-a-devops-engineer.png" alt="DevOps Engineer" class="w-full h-96 object-cover">
             <div class="p-6">
                 <h2 class="text-3xl font-bold text-blue-600 mb-4">DevOps Engineer</h2>
                 <p class="text-gray-700">

@@ -1,13 +1,12 @@
 <?php
 // getAudio.php
-$conexion = mysqli_connect('localhost', 'root', '', 'adsoPage');
-
+$conexion = mysqli_connect('localhost', 'u469734594_adsoPageRoot', 'pgAdso2024', 'u469734594_adsoPage');
 // Verifica la conexión
 if (!$conexion) {
     die("Conexión fallida: " . mysqli_connect_error());
 }
 
-// Obtiene el nombre del archivo desde la URL
+// Obtiene el nombre del archc2ivo desde la URL
 $nombreArchivo = isset($_GET['nombre']) ? $_GET['nombre'] : '';
 
 // Consulta para obtener el audio
