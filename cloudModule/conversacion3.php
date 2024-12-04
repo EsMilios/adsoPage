@@ -28,23 +28,9 @@
             
             <!-- Mensajes de la conversación -->
             <div class="chat-container space-y-4">
-            
-                <div class="chat-message flex items-start space-x-4 ">
-                        <img src="https://cdn.pixabay.com/photo/2021/06/04/10/28/portrait-6309448_1280.jpg" alt="Persona 1" class="w-20 h-20 rounded-full">
-                    <div class="profile">
-                    </div>
-                    <div class="message-content bg-blue-100 p-4 rounded-lg ">
-                        <audio controls>
-                            <source src="../assets/cloudAudios.php?nombre=con3Diag1.wav" type="audio/mp3">
-                            Tu navegador no soporta la reproducción de audio.
-                        </audio>
-                        <p><strong>Mark: </strong> I’m confused about the differences between SaaS, PaaS, and IaaS. Can you explain?</p>
-                    </div>
-                </div>
-
-
+                
                 <div class="chat-message flex items-start justify-end space-x-4">
-                    <div class="message-content bg-green-100 p-4 rounded-lg ">
+                    <div class="message-content bg-green-100 p-4 rounded-lg  max-w-[70%]">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con3Diag2.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
@@ -60,7 +46,7 @@
                         <img src="https://cdn.pixabay.com/photo/2021/06/04/10/28/portrait-6309448_1280.jpg" alt="Persona 1" class="w-20 h-20 rounded-full">
                     <div class="profile">
                     </div>
-                    <div class="message-content bg-blue-100 p-4 rounded-lg ">
+                    <div class="message-content bg-blue-100 p-4 rounded-lg  max-w-[70%]">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con3Diag3.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
@@ -71,7 +57,7 @@
 
 
                 <div class="chat-message flex items-start justify-end space-x-4">
-                    <div class="message-content bg-green-100 p-4 rounded-lg ">
+                    <div class="message-content bg-green-100 p-4 rounded-lg  max-w-[70%]">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con3Diag4.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
@@ -87,7 +73,7 @@
                         <img src="https://cdn.pixabay.com/photo/2021/06/04/10/28/portrait-6309448_1280.jpg" alt="Persona 1" class="w-20 h-20 rounded-full">
                     <div class="profile">
                     </div>
-                    <div class="message-content bg-blue-100 p-4 rounded-lg ">
+                    <div class="message-content bg-blue-100 p-4 rounded-lg  max-w-[70%]">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con3Diag5.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
@@ -98,7 +84,7 @@
 
 
                 <div class="chat-message flex items-start justify-end space-x-4">
-                    <div class="message-content bg-green-100 p-4 rounded-lg ">
+                    <div class="message-content bg-green-100 p-4 rounded-lg  max-w-[70%]">
                         <audio controls>
                             <source src="../assets/cloudAudios.php?nombre=con3Diag6.wav" type="audio/mp3">
                             Tu navegador no soporta la reproducción de audio.
